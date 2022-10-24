@@ -1,0 +1,29 @@
+! Title: Fextralife cosmetic filters
+
+! Make contents fill the page.
+wiki.fextralife.com###sidebar-wrapper:not(>.sidebar-nav>.hidden-lg>.active)
+wiki.fextralife.com###join-vip-container:upward(1)
+wiki.fextralife.com###wrapper:style(padding-left: 0px !important;)
+
+! Remove other wikis carousel
+wiki.fextralife.com##.sliderload:upward(1)
+
+! Remove youtube embeds
+||www.youtube.com/embed/$subdocument,domain=wiki.fextralife.com
+wiki.fextralife.com##.embed-responsive:upward(2)
+
+! Remove twitch.tv embed
+||embed.twitch.tv/$subdocument,domain=wiki.fextralife.com
+
+! Bottom stuff. Unfortunately removing visible-xs removes the scroll to top button.
+wiki.fextralife.com##.footer-sticky
+wiki.fextralife.com##.visible-xs
+wiki.fextralife.com##.hidden-xs
+
+! Not sure if you want to remove the comments section, but you can.
+!wiki.fextralife.com###discussions-section
+
+! Force the home button to take you to the homepage of that wiki instead of opening a dropdown.
+wiki.fextralife.com##li.dropdown:nth-of-type(1) > .dropdown-toggle > .caret
+wiki.fextralife.com##+js(sa, href, /, li.dropdown:nth-of-type(1)>.dropdown-toggle)
+wiki.fextralife.com##+js(sa, data-toggle, "", li.dropdown:nth-of-type(1)>.dropdown-toggle)
