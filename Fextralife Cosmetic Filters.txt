@@ -1,7 +1,7 @@
 ! Title: Fextralife cosmetic filters
 
 ! Make contents fill the page.
-wiki.fextralife.com###sidebar-wrapper:not(>.sidebar-nav>.hidden-lg>.active)
+wiki.fextralife.com###sidebar-wrapper
 wiki.fextralife.com###join-vip-container:upward(1)
 wiki.fextralife.com###wrapper:style(padding-left: 0px !important;)
 
